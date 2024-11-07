@@ -1011,13 +1011,13 @@ per
     * See also [Prefixes for binary multiples](https://physics.nist.gov/cuu/Units/binary.html)
 
 <a name='prefix_component' href='#prefix_component'>prefix_component</a> 
-<br/>:= [a-z]{3,∞}
+<br/>:= [a-z]{3,}
 * [ vc:  must be value in: \<unitIdComponent type="prefix"\>. ]
 * *Notes:*
     * The set of prefix components often expands in new releases, so the requirement to be one of these attribute values is a validity constraint, not a well-formedness constraint. *
 
 <a name='base_component' href='#base_component'>base_component</a> 
-<br/>:= [a-z]{3,∞}
+<br/>:= [a-z]{3,}
 * [ wfc:  must not have a prefix as an initial segment. ]
 * [ wfc:  must not be a value in \<unitIdComponent type="X"\> for X in \{prefix, suffix, power, and, per} ]
 * [ vc:  Must be an attribute value of the `source` in: \<convertUnit source='…' …\> or the `type` in \<unitAlias type="…" replacement="…" …\> ]
@@ -1027,7 +1027,7 @@ per
     * No two different base\_components will share the first 8 letters; see [Unit Identifier Uniqueness](https://github.com/unicode-org/cldr/edit/main/docs/ldml/tr35-general.md#Unit_Identifier_Uniqueness).) ]
 
 <a name='suffix_component' href='#suffix_component'>suffix_component</a> 
-<br/>:= [a-z]{3,∞}
+<br/>:= [a-z]{3,}
 * [ vc:  must be value in: \<unitIdComponent type="suffix"\> ]
 * *Notes:*
     * The set of suffix components often expands in new releases, so the requirement to be one of these attribute values is a validity constraint, not a well-formedness constraint.
@@ -1045,7 +1045,7 @@ and
 <br/>:= grouping "-" core_unit_identifier
 
 grouping 
-<br/>:= [a-z]{3,∞}
+<br/>:= [a-z]{3,}
 
 <a name='currency_unit' href='#currency_unit'>currency_unit</a> 
 <br/>:= "curr-" [a-z]{3}
